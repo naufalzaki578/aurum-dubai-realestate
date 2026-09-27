@@ -1,0 +1,138 @@
+/* --- CORE TOKENS --- */
+:root {
+  --c-bg: #E3E1DC;       /* Stone / Warm Concrete */
+  --c-surface: #DAD7D0;  /* Slightly darker stone */
+  --c-dark: #121212;     /* Pure architectural dark */
+  --c-card: #1A1A1A;     /* Rich dark card */
+  --c-card-border: rgba(255, 255, 255, 0.08);
+  --c-accent: #374336;   /* Deep Arabian Moss */
+  --c-gold: #C9A86A;     /* Muted Dubai Gold */
+  --c-gold-hover: #DFBF83;
+  --font-display: 'Syncopate', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--c-bg);
+  color: var(--c-dark);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- TYPOGRAPHY --- */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* --- NOISE TEXTURE OVERLAY --- */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
+}
+
+/* --- GLASSMORPHISM --- */
+.glass-panel {
+  background: rgba(26, 26, 26, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-nav {
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* --- CARD STACK EFFECT --- */
+.stack-section {
+  padding: 100px 0;
+  background: var(--c-dark);
+  color: #E3E1DC;
+  position: relative;
+}
+
+.card-item {
+  position: sticky;
+  top: 10vh;
+  min-height: 80vh;
+  margin-bottom: 6vh;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.card-inner {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  min-height: 75vh;
+  background: #181818;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.85);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-inner:hover {
+  border-color: rgba(201, 168, 106, 0.3);
+}
+
+/* --- CUSTOM SCROLLBAR --- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #374336;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A86A;
+}
+
+/* --- BUTTON ACCENTS --- */
+.btn-gold {
+  background: linear-gradient(135deg, #C9A86A 0%, #A68346 100%);
+  color: #121212;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, #DFBF83 0%, #B89252 100%);
+  box-shadow: 0 0 25px rgba(201, 168, 106, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  border: 1px solid rgba(201, 168, 106, 0.4);
+  color: #C9A86A;
+  transition: all 0.3s ease;
+}
+.btn-outline-gold:hover {
+  background: rgba(201, 168, 106, 0.12);
+  border-color: #C9A86A;
+  color: #FFF;
+}
