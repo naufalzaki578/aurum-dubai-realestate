@@ -3,9 +3,13 @@
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://aurum-react.vercel.app)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Aplikasi web showcase properti dan residensial ultra-mewah di Dubai, dirancang dengan standar visual kelas atas (*Awwwards / FWA inspired aesthetic*). Proyek ini memadukan estetika arsitektur kontemporer, efek interaktif dinamis, serta alur pengalaman pengguna premium bagi investor global (*High-Net-Worth Individuals*).
+
+🌐 **Live Demo Website:** [https://aurum-react.vercel.app](https://aurum-react.vercel.app)  
+📁 **Repository GitHub:** [https://github.com/naufalzaki578/aurum-dubai-realestate](https://github.com/naufalzaki578/aurum-dubai-realestate)
 
 ---
 
